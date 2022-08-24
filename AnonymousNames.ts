@@ -51,7 +51,7 @@ export class AnonymousNames{
         return this.pickRandomValueFromObject(this.animalsList);
     }
 
-    public generateAnonymousNameFromObject(){
+    public generateName(){
         return `${this.generatePrefixFromObject()} ${this.generateAnimalFromObject()}`;
     }
 }

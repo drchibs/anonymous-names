@@ -7,4 +7,4 @@ const anon = new AnonymousNames();
 
 //anon.generateAnonymousNameFromObject().then(r => console.log(r));
 
-console.log(anon.generateAnonymousNameFromObject());
+console.log(anon.generateName());

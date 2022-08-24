@@ -36,7 +36,7 @@ const generator = new AnonymousNames();
 
 ## Basic Usage
 ```javascript
-const request = generator.generateAnonymousName().then(response => console.log(response));
+const request = generator.generateName().then(response => console.log(response));
 ```
 
 ```bash

@@ -1,6 +1,6 @@
 {
   "name": "anonymous-names",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A small npm package to generate random anonymous names like you see on google docs but with fun twists.",
   "main": "dist/AnonymousNames.js",
   "types": "dist/AnonymousNames.d.ts",

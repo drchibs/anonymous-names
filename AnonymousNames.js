@@ -75,7 +75,7 @@ var AnonymousNames = /** @class */ (function () {
     };
     AnonymousNames.prototype.generateAnonymousName = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var name, _a, _b, _c;
+            var _a, _b, _c;
             return __generator(this, function (_d) {
                 switch (_d.label) {
                     case 0:
@@ -84,10 +84,7 @@ var AnonymousNames = /** @class */ (function () {
                     case 1:
                         _c = (_a = _b.apply("", [_d.sent(), " "])).concat;
                         return [4 /*yield*/, this.generateAnimal()];
-                    case 2:
-                        name = _c.apply(_a, [_d.sent()]);
-                        // console.log(name);
-                        return [2 /*return*/, name];
+                    case 2: return [2 /*return*/, _c.apply(_a, [_d.sent()])];
                 }
             });
         });

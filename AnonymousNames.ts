@@ -1,10 +1,10 @@
-import { readFile } from 'fs/promises';
+import {readFile} from 'fs/promises';
 
 export class AnonymousNames{
-    prefixes: string = "./data/prefixes.json";
-    animals: string = "./data/animals.json";
+    private readonly prefixes: string = "./data/prefixes.json";
+    private readonly animals: string = "./data/animals.json";
 
-    async pickRandomValue(file:string){
+    private async pickRandomValue(file:string){
         const json = await readFile(file);
         const object = JSON.parse(json.toString());
 
@@ -15,17 +15,15 @@ export class AnonymousNames{
 
     }
 
-    async generatePrefix(){
+    private async generatePrefix(){
         return this.pickRandomValue(this.prefixes);
     }
 
-    async generateAnimal(){
+    private async generateAnimal(){
         return this.pickRandomValue(this.animals);
     }
 
-    async generateAnonymousName(){
-        const name = `${await this.generatePrefix()} ${await this.generateAnimal()}`;
-        // console.log(name);
-        return name;
+    public async generateAnonymousName(){
+        return `${await this.generatePrefix()} ${await this.generateAnimal()}`;
     }
 }

@@ -22,14 +22,12 @@ export class AnonymousNames{
 
     }
 
-    private async pickRandomValueFromObject(list: any){
+    private pickRandomValueFromObject(list: any){
 
-        const object = JSON.parse(list.toString());
-
-        const keys = Object.keys(object);
+        const keys = Object.keys(list);
         const index = keys[Math.floor(Math.random() * keys.length)];
 
-        return object[index];
+        return list[index];
 
     }
 
@@ -45,15 +43,15 @@ export class AnonymousNames{
         return `${await this.generatePrefix()} ${await this.generateAnimal()}`;
     }
 
-    private async generatePrefixFromObject(){
-        return this.pickRandomValue(this.prefixesList);
+    private generatePrefixFromObject(){
+        return this.pickRandomValueFromObject(this.prefixesList);
     }
 
-    private async generateAnimalFromObject(){
-        return this.pickRandomValue(this.animalsList);
+    private generateAnimalFromObject(){
+        return this.pickRandomValueFromObject(this.animalsList);
     }
 
-    public async generateAnonymousNameFromObject(){
-        return `${await this.generatePrefixFromObject()} ${await this.generateAnimalFromObject()}`;
+    public generateAnonymousNameFromObject(){
+        return `${this.generatePrefixFromObject()} ${this.generateAnimalFromObject()}`;
     }
 }

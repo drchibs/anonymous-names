@@ -22,6 +22,9 @@ npm i anonymous-names
 
 ```javascript
 const AnonymousNames = require("anonymous-names").AnonymousNames;
+
+//ES6+
+import { AnonymousNames } from "anonymous-names";
 ```
 
 ## Creating an Instance of the SDK:
@@ -33,7 +36,7 @@ const generator = new AnonymousNames();
 
 ## Basic Usage
 ```javascript
-const request = anon.generateAnonymousName().then(response => console.log(response));
+const request = generator.generateAnonymousName().then(response => console.log(response));
 ```
 
 ```bash

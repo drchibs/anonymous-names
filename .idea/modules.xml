@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/anonymous-names.iml" filepath="$PROJECT_DIR$/.idea/anonymous-names.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../anonymous-names-api/.idea/anonymous-names-api.iml" filepath="$PROJECT_DIR$/../anonymous-names-api/.idea/anonymous-names-api.iml" />
     </modules>
   </component>
 </project>

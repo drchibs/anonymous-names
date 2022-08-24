@@ -1,4 +1,23 @@
 {
+  "name": "anonymous-names",
+  "version": "0.0.1",
+  "description": "A small npm package to generate random anonymous names like you see on google docs but with fun twists.",
+  "keywords": [
+    "anonymous",
+    "names",
+    "nodejs",
+    "anonymous names"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drchibs/anonymous-names.git"
+  },
+  "author": "@drchibs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/drchibs/anonymous-names/issues"
+  },
+  "homepage": "https://github.com/drchibs/anonymous-names#readme",
   "devDependencies": {
     "@types/node": "^18.7.11"
   }
